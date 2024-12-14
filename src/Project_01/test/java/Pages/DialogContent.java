@@ -1,6 +1,6 @@
 package Pages;
 
-import Utilities.GWD;
+import Utilities.GWD01;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,11 +10,11 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-public class DialogContent extends ParentPage {
-    WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(10));
+public class DialogContent extends ParentPage01 {
+    WebDriverWait wait = new WebDriverWait(GWD01.getDriver(), Duration.ofSeconds(10));
 
     public DialogContent() {
-        PageFactory.initElements(GWD.getDriver(), this);
+        PageFactory.initElements(GWD01.getDriver(), this);
     }
 
     @FindBy(xpath = "//input[@id='customer.firstName']")

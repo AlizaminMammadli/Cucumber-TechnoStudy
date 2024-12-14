@@ -4,12 +4,11 @@ import Pages.DialogContent01;
 import Pages.LeftNav01;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class _00_DataTable {
+public class _00_DataBase {
     LeftNav01 ln = new LeftNav01();
     DialogContent01 dc = new DialogContent01();
 
@@ -47,24 +46,4 @@ public class _00_DataTable {
         }
     }
 
-    @And("User select the element from Dialog")
-    public void userSelectTheElementFromDialog(DataTable dtSelections) {
-        List<List<String>> listSelections = dtSelections.asLists(String.class);
-        for (int i = 0; i < listSelections.size(); i++) {
-            WebElement ddMenu = dc.getWebElement(listSelections.get(i).get(0));
-            dc.mySelectByIndex(ddMenu, Integer.parseInt(listSelections.get(i).get(1)));
-        }
-    }
-
-    @Then("Message Should be Displayed")
-    public void MessageShouldBeDisplayed(DataTable dtMessage) {
-        List<String> listMessages = dtMessage.asList(String.class);
-        for (int i = 0; i < listMessages.size(); i++) {
-           dc.verifyMessageContainsText(listMessages.get(i));
-        }
-    }
-
-
 }
-
-

@@ -1,0 +1,10 @@
+Running two projects together can cause problems,
+For this reason, after determining the project to be run,
+the folders in each project need to take some sets
+
+
+Test>Java - Mark as Test Sources Root
+Test>Resources - Mark as Test Resources Root
+
+Best regards
+Alizamin Mammadli

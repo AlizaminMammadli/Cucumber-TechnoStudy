@@ -1,10 +1,9 @@
 package StepDefinitions;
 
-import Pages.DialogContent;
-import Pages.LeftNav;
-import Utilities.GWD;
+import Pages.DialogContent01;
+import Pages.LeftNav01;
+import Utilities.GWD01;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,20 +14,20 @@ import java.time.Duration;
 import java.util.List;
 
 public class _US05_TransferFunds {
-    LeftNav ln = new LeftNav();
-    DialogContent dc = new DialogContent();
-    WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(5));
+    LeftNav01 ln = new LeftNav01();
+    DialogContent01 dc = new DialogContent01();
+    WebDriverWait wait = new WebDriverWait(GWD01.getDriver(), Duration.ofSeconds(5));
 
     @Then("Login Success Message Should be Displayed")
     public void loginSuccessMessageShouldBeDisplayed() {
 
-        Assert.assertTrue(GWD.getDriver().getCurrentUrl().toLowerCase().contains("overview"));
+        Assert.assertTrue(GWD01.getDriver().getCurrentUrl().toLowerCase().contains("overview"));
     }
 
     @Then("Transfer Page Should be Displayed")
     public void transferPageShouldBeDisplayed() {
 
-        Assert.assertTrue(GWD.getDriver().getCurrentUrl().toLowerCase().contains("transfer"));
+        Assert.assertTrue(GWD01.getDriver().getCurrentUrl().toLowerCase().contains("transfer"));
     }
 
 

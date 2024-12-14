@@ -1,8 +1,8 @@
 package StepDefinitions;
 
-import Pages.DialogContent;
-import Pages.LeftNav;
-import Utilities.GWD;
+import Pages.DialogContent01;
+import Pages.LeftNav01;
+import Utilities.GWD01;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,9 +18,9 @@ import java.util.List;
 
 public class _US04_NewAccount {
 
-    DialogContent dc = new DialogContent();
-    LeftNav ln = new LeftNav();
-    WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(15));
+    DialogContent01 dc = new DialogContent01();
+    LeftNav01 ln = new LeftNav01();
+    WebDriverWait wait = new WebDriverWait(GWD01.getDriver(), Duration.ofSeconds(15));
 
 
     @Then("Minimum Account Message Should be Displayed")
