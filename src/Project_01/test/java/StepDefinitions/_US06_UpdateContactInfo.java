@@ -1,24 +1,20 @@
 package StepDefinitions;
 
-import Pages.DialogContent;
-import Pages.LeftNav;
-import Utilities.GWD;
-import io.cucumber.datatable.DataTable;
+import Pages.DialogContent01;
+import Pages.LeftNav01;
+import Utilities.GWD01;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import org.apache.commons.lang3.RandomStringUtils;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
-import java.util.List;
 
 public class _US06_UpdateContactInfo {
-    DialogContent dc = new DialogContent();
-    LeftNav ln = new LeftNav();
-    WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(15));
+    DialogContent01 dc = new DialogContent01();
+    LeftNav01 ln = new LeftNav01();
+    WebDriverWait wait = new WebDriverWait(GWD01.getDriver(), Duration.ofSeconds(15));
     _US01_Register data = new _US01_Register();
 
     @Then("Contact Update Message Confirmation")

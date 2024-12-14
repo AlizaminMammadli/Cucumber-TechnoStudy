@@ -1,8 +1,8 @@
 package StepDefinitions;
 
 
-import Pages.DialogContent;
-import Utilities.GWD;
+import Pages.DialogContent01;
+import Utilities.GWD01;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,8 +13,8 @@ import java.time.Duration;
 import java.util.List;
 
 public class _US03_PayingBills {
-    DialogContent dc = new DialogContent();
-    WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(10));
+    DialogContent01 dc = new DialogContent01();
+    WebDriverWait wait = new WebDriverWait(GWD01.getDriver(), Duration.ofSeconds(10));
 
     @Then("Bill Payment Message Should be Displayed")
     public void billPaymentMessageShouldBeDisplayed(DataTable dtMessage) {

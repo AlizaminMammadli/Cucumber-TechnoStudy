@@ -1,8 +1,8 @@
 package StepDefinitions;
 
-import Pages.DialogContent;
-import Pages.LeftNav;
-import Utilities.GWD;
+import Pages.DialogContent01;
+import Pages.LeftNav01;
+import Utilities.GWD01;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -11,14 +11,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import javax.xml.crypto.Data;
 import java.time.Duration;
 import java.util.List;
 
 public class _US02_Login {
-    WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(10));
-    LeftNav ln = new LeftNav();
-    DialogContent dc = new DialogContent();
+    WebDriverWait wait = new WebDriverWait(GWD01.getDriver(), Duration.ofSeconds(10));
+    LeftNav01 ln = new LeftNav01();
+    DialogContent01 dc = new DialogContent01();
     _US01_Register data = new _US01_Register();
 
     @Then("Login Message Should be Displayed")

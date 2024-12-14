@@ -1,15 +1,15 @@
 package Pages;
 
-import Utilities.GWD;
+import Utilities.GWD01;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-public class LeftNav extends ParentPage {
+public class LeftNav extends ParentPage01 {
     public LeftNav() {
-        PageFactory.initElements(GWD.getDriver(), this);
+        PageFactory.initElements(GWD01.getDriver(), this);
     }
 
     @FindBy(xpath = "//ul[@class='leftmenu']//a[text()='About Us']")

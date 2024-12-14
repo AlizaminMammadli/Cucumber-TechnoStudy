@@ -1,7 +1,7 @@
 package StepDefinitions;
 
-import Pages.DialogContent;
-import Utilities.GWD;
+import Pages.DialogContent01;
+import Utilities.GWD01;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,8 +10,8 @@ import org.testng.Assert;
 import java.time.Duration;
 
 public class _US07_LoanApplication {
-    DialogContent dc = new DialogContent();
-    WebDriverWait wait=new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(15));
+    DialogContent01 dc = new DialogContent01();
+    WebDriverWait wait=new WebDriverWait(GWD01.getDriver(), Duration.ofSeconds(15));
 
     @Then("Loan Approved message confirmation")
     public void userDeleteTheElementFromDialog() {

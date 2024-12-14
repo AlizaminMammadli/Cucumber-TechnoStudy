@@ -1,21 +1,19 @@
 package StepDefinitions;
 
-import Pages.DialogContent;
-import Pages.LeftNav;
-import Pages.ParentPage;
-import Utilities.GWD;
+import Pages.DialogContent01;
+import Pages.LeftNav01;
+import Utilities.GWD01;
 import io.cucumber.java.en.*;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.testng.Assert;
 
 public class _US01_Register {
-    DialogContent dc = new DialogContent();
-    LeftNav ln=new LeftNav();
+    DialogContent01 dc = new DialogContent01();
+    LeftNav01 ln=new LeftNav01();
     static String randomData= RandomStringUtils.randomAlphanumeric(8);
 
     @Given("Navigate to ParaBank Website")
     public void navigateToParaBankWebsite() {
-        GWD.getDriver().get("https://parabank.parasoft.com/");
+        GWD01.getDriver().get("https://parabank.parasoft.com/");
 
     }
 
